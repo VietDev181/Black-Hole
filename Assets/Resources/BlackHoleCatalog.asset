@@ -1,0 +1,1297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100e043e702f0452da5f3f3410c4eb36, type: 3}
+  m_Name: BlackHoleCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::BlackHoleCatalog
+  objectShader: {fileID: 4800000, guid: 7c7e3896419be49ee8f209179009793e, type: 3}
+  groundShader: {fileID: 4800000, guid: bde522b57442949178b7bb3d60856ece, type: 3}
+  holeShader: {fileID: 4800000, guid: 87df2ce58eecc4dbcbd875594fe0e09a, type: 3}
+  skyShader: {fileID: 4800000, guid: f24990ee4d31d4f76b8788e9ff5ab75c, type: 3}
+  particleShader: {fileID: 4800000, guid: 71032c3519810425e852bd7f2021e5d5, type: 3}
+  uiPanelShader: {fileID: 4800000, guid: 23be72eeec1fe40cdbf39e19d2aa486c, type: 3}
+  uiTextShader: {fileID: 4800000, guid: 7e204d834f94149dc82ef54dddf89970, type: 3}
+  menuMusic: {fileID: 8300000, guid: 71a3ce1ecd98a6849881d657dd3e4a82, type: 3}
+  gameMusic: {fileID: 8300000, guid: ae0519014a9ed944eaf370f953a641a8, type: 3}
+  gameOverMusic: {fileID: 8300000, guid: c0be694a929b87b4dbb6e89568c37a6f, type: 3}
+  clickSfx: {fileID: 8300000, guid: e82832d8620e7f348a7fdbb92331f3c3, type: 3}
+  eatSfx: {fileID: 8300000, guid: 881561ed3bba33e4ea5b16bfc215c98e, type: 3}
+  coinSfx: {fileID: 8300000, guid: 5656866ad029c664b8f39eedcc59ad14, type: 3}
+  growSfx: {fileID: 8300000, guid: 55c93d26f3c6c2740b6704d427fc1887, type: 3}
+  themes:
+  - name: City
+    atlas: {fileID: 2800000, guid: 3b1b1628b08c445a7880c40a269d5a50, type: 3}
+    groundStyle: 0
+    items:
+    - id: trash_B
+      prefab: {fileID: 919132149155446097, guid: 573206e328574430facedee903c33b4b, type: 3}
+      radius: 0.05
+      height: 0.040390313
+      localHeight: 0.040390313
+      lift: -0
+      score: 1
+    - id: trash_A
+      prefab: {fileID: 919132149155446097, guid: dbed94bdf71524112848421752ddcf52, type: 3}
+      radius: 0.0655069
+      height: 0.05237695
+      localHeight: 0.052376945
+      lift: 0.0000000037252903
+      score: 1
+    - id: firehydrant
+      prefab: {fileID: 919132149155446097, guid: 7c9cdad619ff944999a625f162afc9f3, type: 3}
+      radius: 0.067017056
+      height: 0.22459507
+      localHeight: 0.22459513
+      lift: -0.000000059604645
+      score: 1
+    - id: box_B
+      prefab: {fileID: 919132149155446097, guid: f718abc1a94634f65a8b6cac757c322b, type: 3}
+      radius: 0.076789685
+      height: 0.16963226
+      localHeight: 0.16963224
+      lift: 0.000000014901161
+      score: 1
+    - id: trafficlight_A
+      prefab: {fileID: 919132149155446097, guid: b11c57063b53b465da5fbcab0cf70ad6, type: 3}
+      radius: 0.083039716
+      height: 0.72948587
+      localHeight: 0.72949505
+      lift: -0.000009179115
+      score: 1
+    - id: bush
+      prefab: {fileID: 919132149155446097, guid: 0bd897e9508b5469b9a54f7f744b6204, type: 3}
+      radius: 0.09784344
+      height: 0.38052958
+      localHeight: 0.38052958
+      lift: -0
+      score: 1
+    - id: streetlight
+      prefab: {fileID: 919132149155446097, guid: 68c5d60ec85a74c27bb016f4d58ed469, type: 3}
+      radius: 0.09960369
+      height: 0.9599148
+      localHeight: 0.959924
+      lift: -0.000009179115
+      score: 1
+    - id: box_A
+      prefab: {fileID: 919132149155446097, guid: 3d727af99e5ba4244a365ac1b910974c, type: 3}
+      radius: 0.10100003
+      height: 0.17640117
+      localHeight: 0.17640114
+      lift: 0.000000029802322
+      score: 1
+    - id: trafficlight_B
+      prefab: {fileID: 919132149155446097, guid: 24eff2c6be15f4706a4aa7b2fac99000, type: 3}
+      radius: 0.117046006
+      height: 0.9599148
+      localHeight: 0.959924
+      lift: -0.000009179115
+      score: 1
+    - id: bench
+      prefab: {fileID: 919132149155446097, guid: 173f4db2d6bd34cd59b6aa2b3bac1ead, type: 3}
+      radius: 0.15625001
+      height: 0.100000024
+      localHeight: 0.100000024
+      lift: -0
+      score: 1
+    - id: dumpster
+      prefab: {fileID: 919132149155446097, guid: 6f343b222f1f84b0c8caba275b77dc62, type: 3}
+      radius: 0.24567242
+      height: 0.31727865
+      localHeight: 0.31727865
+      lift: -0
+      score: 2
+    - id: watertower
+      prefab: {fileID: 919132149155446097, guid: 3527f3cd1240843d498c32cda5db2d72, type: 3}
+      radius: 0.24944308
+      height: 0.67000103
+      localHeight: 0.6700001
+      lift: 0.0000009536743
+      score: 2
+    - id: trafficlight_C
+      prefab: {fileID: 919132149155446097, guid: cc66117c318a44d56870ed45b0b56e22, type: 3}
+      radius: 0.3067919
+      height: 0.9694854
+      localHeight: 0.9694946
+      lift: -0.000009179115
+      score: 2
+    - id: car_hatchback
+      prefab: {fileID: 919132149155446097, guid: b2840540bd281455f910f32b579ee3bc, type: 3}
+      radius: 0.33529186
+      height: 0.36876422
+      localHeight: 0.30772132
+      lift: 0.061042912
+      score: 3
+    - id: car_police
+      prefab: {fileID: 919132149155446097, guid: fd3e7e79f992746d4b630dc6034f6e28, type: 3}
+      radius: 0.37819186
+      height: 0.41263527
+      localHeight: 0.3515924
+      lift: 0.061042905
+      score: 4
+    - id: car_sedan
+      prefab: {fileID: 919132149155446097, guid: a65c8d24dbcb14e038492ee94ed3170c, type: 3}
+      radius: 0.37819186
+      height: 0.36876422
+      localHeight: 0.30772132
+      lift: 0.061042912
+      score: 4
+    - id: car_stationwagon
+      prefab: {fileID: 919132149155446097, guid: 11d0ff21479944a94ac83cb86ccbb836, type: 3}
+      radius: 0.37819186
+      height: 0.36876422
+      localHeight: 0.30772132
+      lift: 0.061042912
+      score: 4
+    - id: car_taxi
+      prefab: {fileID: 919132149155446097, guid: 5d554292a9a974cbbae9ec1dae4b5c86, type: 3}
+      radius: 0.37819186
+      height: 0.4344718
+      localHeight: 0.37342888
+      lift: 0.061042905
+      score: 4
+    - id: building_C
+      prefab: {fileID: 919132149155446097, guid: 4ee09f50f864e419f96ee7fbc55a6145, type: 3}
+      radius: 1
+      height: 2.9766207
+      localHeight: 2.9766207
+      lift: -0
+      score: 25
+    - id: building_B
+      prefab: {fileID: 919132149155446097, guid: bc18ebab862d8496a9813d8da986cf01, type: 3}
+      radius: 1
+      height: 1.6499999
+      localHeight: 1.6499999
+      lift: -0
+      score: 25
+    - id: building_A
+      prefab: {fileID: 919132149155446097, guid: 19fca30cbe1bf45d290a5ce1ff51866f, type: 3}
+      radius: 1
+      height: 1.6499999
+      localHeight: 1.6499999
+      lift: -0
+      score: 25
+    - id: building_G
+      prefab: {fileID: 919132149155446097, guid: b136ef46049d248c38b1f3c05bb114c5, type: 3}
+      radius: 1.0021904
+      height: 2.9763527
+      localHeight: 2.9763527
+      lift: -0
+      score: 25
+    - id: building_F
+      prefab: {fileID: 919132149155446097, guid: d42f7bd9cbc0e4c1cb14a951f3e258f4, type: 3}
+      radius: 1.0021904
+      height: 2.35
+      localHeight: 2.35
+      lift: -0
+      score: 25
+    - id: building_E
+      prefab: {fileID: 919132149155446097, guid: 0a52c5fe777a940288b82b79fd27d318, type: 3}
+      radius: 1.0021904
+      height: 2.35
+      localHeight: 2.35
+      lift: -0
+      score: 25
+    - id: building_H
+      prefab: {fileID: 919132149155446097, guid: b014eefc948eb4f3c8cd353e26f0fc53, type: 3}
+      radius: 1.0021904
+      height: 3.05
+      localHeight: 3.05
+      lift: -0
+      score: 25
+    - id: building_D
+      prefab: {fileID: 919132149155446097, guid: b339909ff12874b1296540994de822eb, type: 3}
+      radius: 1.0066369
+      height: 2.9700003
+      localHeight: 2.9700003
+      lift: -0
+      score: 25
+    colorA: {r: 0.22, g: 0.23, b: 0.29, a: 1}
+    colorB: {r: 0.55, g: 0.57, b: 0.62, a: 1}
+    colorC: {r: 1, g: 0.82, b: 0.3, a: 1}
+    lightColor: {r: 1, g: 0.92, b: 0.8, a: 1}
+    lightDir: {x: -0.35, y: 0.85, z: -0.4}
+    ambientSky: {r: 0.35, g: 0.385, b: 0.56, a: 0.7}
+    ambientGround: {r: 0.18, g: 0.132, b: 0.24000001, a: 0.6}
+    rim: {r: 0.55, g: 0.7, b: 1, a: 1}
+    fog: {r: 0.12, g: 0.08, b: 0.25, a: 1}
+    border: {r: 0.35, g: 0.85, b: 1, a: 1}
+    holeAccent: {r: 0.55, g: 0.3, b: 1, a: 1}
+    holeHot: {r: 1, g: 0.55, b: 0.2, a: 1}
+    space: {r: 0.02, g: 0.01, b: 0.06, a: 1}
+    nebulaA: {r: 0.22, g: 0.1, b: 0.5, a: 1}
+    nebulaB: {r: 0.9, g: 0.3, b: 0.6, a: 1}
+  - name: Haunted Graveyard
+    atlas: {fileID: 2800000, guid: 7055eda6206a042928b4aace7f0ea3f2, type: 3}
+    groundStyle: 1
+    items:
+    - id: candle_thin
+      prefab: {fileID: 919132149155446097, guid: 59311e23c93af441a86cedf13d514208, type: 3}
+      radius: 0.08647276
+      height: 0.7856838
+      localHeight: 0.7856838
+      lift: -0
+      score: 1
+    - id: candle
+      prefab: {fileID: 919132149155446097, guid: 91f79ff3735894994aa56b4c4e072de1, type: 3}
+      radius: 0.1496669
+      height: 0.7856838
+      localHeight: 0.7856838
+      lift: -0
+      score: 1
+    - id: candle_melted
+      prefab: {fileID: 919132149155446097, guid: a481790d6cd3142b0889ca35b3417a26, type: 3}
+      radius: 0.1496669
+      height: 0.6313855
+      localHeight: 0.6313855
+      lift: -0
+      score: 1
+    - id: candle_triple
+      prefab: {fileID: 919132149155446097, guid: 937760037a8b04b03a5d2f7bb03773d1, type: 3}
+      radius: 0.2080078
+      height: 0.7856838
+      localHeight: 0.7856838
+      lift: -0
+      score: 1
+    - id: bone_B
+      prefab: {fileID: 919132149155446097, guid: 6caa9fd39403042e795ea9b45be13c2a, type: 3}
+      radius: 0.24721515
+      height: 0.17466101
+      localHeight: 0.087330416
+      lift: 0.087330595
+      score: 2
+    - id: fence_pillar_broken
+      prefab: {fileID: 919132149155446097, guid: 9b8187d96b70947f6a47027e8e91cb05, type: 3}
+      radius: 0.25
+      height: 1.5029739
+      localHeight: 1.5029739
+      lift: -0
+      score: 2
+    - id: fence_pillar
+      prefab: {fileID: 919132149155446097, guid: 6f19396039f094070b11ad27c67f727d, type: 3}
+      radius: 0.25000003
+      height: 2.1999998
+      localHeight: 2.1999998
+      lift: -0
+      score: 2
+    - id: bone_A
+      prefab: {fileID: 919132149155446097, guid: 3df93a658b4c54356948fa5e2cab7251, type: 3}
+      radius: 0.26488796
+      height: 0.2760803
+      localHeight: 0.13804042
+      lift: 0.13803989
+      score: 2
+    - id: pumpkin_yellow_small
+      prefab: {fileID: 919132149155446097, guid: 7ccfcbee2cfaf4fae8c7f989738c0fb0, type: 3}
+      radius: 0.30000004
+      height: 0.55
+      localHeight: 0.5472884
+      lift: 0.002711594
+      score: 2
+    - id: pumpkin_orange_small
+      prefab: {fileID: 919132149155446097, guid: 416e3280513f340b2962fe38c05ce653, type: 3}
+      radius: 0.30000004
+      height: 0.55
+      localHeight: 0.5472884
+      lift: 0.002711594
+      score: 2
+    - id: gravemarker_A
+      prefab: {fileID: 919132149155446097, guid: 1abc8a9831f564cd7a596aa7c749199c, type: 3}
+      radius: 0.31061742
+      height: 1.1961025
+      localHeight: 1.1961025
+      lift: -0
+      score: 2
+    - id: lantern_standing
+      prefab: {fileID: 919132149155446097, guid: 224bd29e02a254acd9cbd46dbf54814e, type: 3}
+      radius: 0.32001007
+      height: 0.92519176
+      localHeight: 0.9251917
+      lift: 0.000000059604645
+      score: 3
+    - id: lantern_hanging
+      prefab: {fileID: 919132149155446097, guid: 941f7a09c300145d3806abf43de6674f, type: 3}
+      radius: 0.32001007
+      height: 1.4085759
+      localHeight: 0.1000005
+      lift: 1.3085754
+      score: 3
+    - id: gravemarker_B
+      prefab: {fileID: 919132149155446097, guid: d7314f79137f84bb6a07600818b25897, type: 3}
+      radius: 0.33323416
+      height: 1.1794931
+      localHeight: 1.1794931
+      lift: -0
+      score: 3
+    - id: bone_C
+      prefab: {fileID: 919132149155446097, guid: e54005cf6e60b4e1186ccf5542341058, type: 3}
+      radius: 0.39488798
+      height: 0.2760803
+      localHeight: 0.13804042
+      lift: 0.13803989
+      score: 4
+    - id: ribcage
+      prefab: {fileID: 919132149155446097, guid: 24e5013d0af6f4ec2a4ee7199221e990, type: 3}
+      radius: 0.4055164
+      height: 0.8582255
+      localHeight: 0.47124508
+      lift: 0.38698044
+      score: 4
+    - id: skull
+      prefab: {fileID: 919132149155446097, guid: 6a5b6433a18ab425cb0ce45eecd1366e, type: 3}
+      radius: 0.45696414
+      height: 0.89824426
+      localHeight: 0.9157135
+      lift: -0.017469227
+      score: 5
+    - id: skull_candle
+      prefab: {fileID: 919132149155446097, guid: 62e379fb9560b4436a9e4296f03a21f4, type: 3}
+      radius: 0.464819
+      height: 1.1873217
+      localHeight: 1.2447771
+      lift: -0.05745542
+      score: 5
+    - id: pillar
+      prefab: {fileID: 919132149155446097, guid: 5c28b0bc3bdd1499aa51b648b4b71f87, type: 3}
+      radius: 0.50000006
+      height: 4.3999996
+      localHeight: 4.3999996
+      lift: -0
+      score: 6
+    - id: pumpkin_yellow
+      prefab: {fileID: 919132149155446097, guid: 2f1331a438e26406d890b4856724dd50, type: 3}
+      radius: 0.5008699
+      height: 0.70000005
+      localHeight: 0.69661707
+      lift: 0.0033829808
+      score: 6
+    - id: pumpkin_orange
+      prefab: {fileID: 919132149155446097, guid: adfc48e46695a44c089f8d6a51a2e232, type: 3}
+      radius: 0.5008699
+      height: 0.70000005
+      localHeight: 0.69661707
+      lift: 0.0033829808
+      score: 6
+    - id: gravestone
+      prefab: {fileID: 919132149155446097, guid: 719220180111d43d399160e6838f31d1, type: 3}
+      radius: 0.525
+      height: 1.6
+      localHeight: 1.6000007
+      lift: -0.00000071525574
+      score: 7
+    - id: shrine
+      prefab: {fileID: 919132149155446097, guid: de393bf09722b41ffa1be7e066eee1b8, type: 3}
+      radius: 0.5495467
+      height: 2.3999999
+      localHeight: 2.3999999
+      lift: -0
+      score: 8
+    - id: shrine_candles
+      prefab: {fileID: 919132149155446097, guid: f90c7a7b0eb7e4b25b54c2a2ef0776c0, type: 3}
+      radius: 0.5495467
+      height: 1.7893307
+      localHeight: 1.7893307
+      lift: -0
+      score: 8
+    - id: post
+      prefab: {fileID: 919132149155446097, guid: f8d677add088748fcaeebeefa0f13eca, type: 3}
+      radius: 0.58322656
+      height: 3.3
+      localHeight: 3.3
+      lift: -0
+      score: 9
+    - id: post_lantern
+      prefab: {fileID: 919132149155446097, guid: 3b9f3c847407e4d66a21b9bff9ee9ee7, type: 3}
+      radius: 0.62108445
+      height: 3.3
+      localHeight: 3.3
+      lift: -0
+      score: 10
+    - id: tree_dead_small
+      prefab: {fileID: 919132149155446097, guid: 69b1d3d7172ec42a5bdcba423a47b6a4, type: 3}
+      radius: 0.63549995
+      height: 2.9863727
+      localHeight: 2.689838
+      lift: 0.29653478
+      score: 10
+    - id: post_skull
+      prefab: {fileID: 919132149155446097, guid: dfc348e1a428541088f0ecc51efbad00, type: 3}
+      radius: 0.65066963
+      height: 3.3
+      localHeight: 3.3
+      lift: -0
+      score: 11
+    - id: tree_dead_medium
+      prefab: {fileID: 919132149155446097, guid: 1cf312f1159a54d1fb09066875cef147, type: 3}
+      radius: 0.6694661
+      height: 4.1889853
+      localHeight: 3.8887422
+      lift: 0.30024314
+      score: 11
+    - id: pumpkin_yellow_jackolantern
+      prefab: {fileID: 919132149155446097, guid: b4f36aca43b7444efb6883246e80fe91, type: 3}
+      radius: 0.73249996
+      height: 1.3
+      localHeight: 1.2963282
+      lift: 0.0036717653
+      score: 13
+    - id: pumpkin_orange_jackolantern
+      prefab: {fileID: 919132149155446097, guid: 9cb09f99ecdc64e3bbee30a1171025f9, type: 3}
+      radius: 0.73249996
+      height: 1.3
+      localHeight: 1.2963282
+      lift: 0.0036717653
+      score: 13
+    - id: bench
+      prefab: {fileID: 919132149155446097, guid: 0e0e494bdcabd4ded8cc1c7ee67e2d21, type: 3}
+      radius: 0.7812537
+      height: 0.5
+      localHeight: 0.5
+      lift: -0
+      score: 15
+    - id: grave_B
+      prefab: {fileID: 919132149155446097, guid: 65ea2d4ea25374b2cb6f20964d040532, type: 3}
+      radius: 0.825
+      height: 2.2000008
+      localHeight: 2.2000008
+      lift: -0
+      score: 17
+    - id: grave_A
+      prefab: {fileID: 919132149155446097, guid: d024d233a2bdf45c4a7a5f4416493f08, type: 3}
+      radius: 0.825
+      height: 2.1290193
+      localHeight: 2.1290193
+      lift: -0
+      score: 17
+    - id: bench_decorated
+      prefab: {fileID: 919132149155446097, guid: 83884e9a407ec4dc5920a03d96d79056, type: 3}
+      radius: 0.8279692
+      height: 1.6772722
+      localHeight: 1.6772722
+      lift: -0
+      score: 17
+    - id: grave_A_destroyed
+      prefab: {fileID: 919132149155446097, guid: 0bc8d1ff2906b4947a7af4d0360c9255, type: 3}
+      radius: 0.87379885
+      height: 2.106115
+      localHeight: 2.106115
+      lift: -0
+      score: 19
+    - id: tree_dead_large
+      prefab: {fileID: 919132149155446097, guid: cbf2d8cdc80674601b2d1915f0b3cda9, type: 3}
+      radius: 0.9889241
+      height: 5.0661154
+      localHeight: 4.793867
+      lift: 0.27224827
+      score: 24
+    - id: plaque_candles
+      prefab: {fileID: 919132149155446097, guid: 5bf7bd7138fd141c99f3d25d9d335da8, type: 3}
+      radius: 1
+      height: 1.1311963
+      localHeight: 1.1311963
+      lift: -0
+      score: 25
+    - id: plaque
+      prefab: {fileID: 919132149155446097, guid: 70334f8265dba487099d395df1bcac61, type: 3}
+      radius: 1
+      height: 0.40000004
+      localHeight: 0.4
+      lift: 0.000000029802322
+      score: 25
+    - id: tree_dead_large_decorated
+      prefab: {fileID: 919132149155446097, guid: 8f056ac6cc5d843c3bc9f512e35ed91b, type: 3}
+      radius: 1.0305308
+      height: 5.417021
+      localHeight: 5.1447725
+      lift: 0.27224827
+      score: 27
+    - id: tree_pine_orange_small
+      prefab: {fileID: 919132149155446097, guid: f6e0644fa84a54faba4efa90d6ce0aa3, type: 3}
+      radius: 1.1648033
+      height: 4.042824
+      localHeight: 3.6477594
+      lift: 0.39506447
+      score: 34
+    - id: tree_pine_yellow_small
+      prefab: {fileID: 919132149155446097, guid: f0942c3dd451a423d9835aca53985993, type: 3}
+      radius: 1.1648033
+      height: 4.042824
+      localHeight: 3.6477594
+      lift: 0.39506447
+      score: 34
+    - id: coffin_decorated
+      prefab: {fileID: 919132149155446097, guid: 7d01ff5078a874e9bbd73258655423e1, type: 3}
+      radius: 1.3249999
+      height: 0.9025096
+      localHeight: 0.90250957
+      lift: 0.000000059604645
+      score: 44
+    - id: coffin
+      prefab: {fileID: 919132149155446097, guid: c782128732e094ab8bc56d394a59fcb3, type: 3}
+      radius: 1.3249999
+      height: 1.3224144
+      localHeight: 1.3224144
+      lift: 0.000000059604645
+      score: 44
+    - id: fence_seperate_broken
+      prefab: {fileID: 919132149155446097, guid: 0d2321a3820174991a0c93673300ebc8, type: 3}
+      radius: 1.3296728
+      height: 2
+      localHeight: 2
+      lift: -0
+      score: 44
+    - id: fence_seperate
+      prefab: {fileID: 919132149155446097, guid: f3f7fb0653e374ebb8e2e08452b14319, type: 3}
+      radius: 1.3296728
+      height: 2
+      localHeight: 2
+      lift: -0
+      score: 44
+    - id: fence_gate
+      prefab: {fileID: 919132149155446097, guid: 3a02f576cb81b49a38029cb9de0c3987, type: 3}
+      radius: 1.3874999
+      height: 3
+      localHeight: 3
+      lift: -0
+      score: 48
+    - id: fence_broken
+      prefab: {fileID: 919132149155446097, guid: dfcf1fffc669c453a9a7198ece6ca32e, type: 3}
+      radius: 1.3874999
+      height: 2.1999998
+      localHeight: 2.1999998
+      lift: -0
+      score: 48
+    - id: fence
+      prefab: {fileID: 919132149155446097, guid: d36ec875468244fcd840d2e667b47be9, type: 3}
+      radius: 1.3874999
+      height: 2.1999998
+      localHeight: 2.1999998
+      lift: -0
+      score: 48
+    - id: arch_gate
+      prefab: {fileID: 919132149155446097, guid: 9492e313e7e304112a6b173b2b8b1cd4, type: 3}
+      radius: 1.505722
+      height: 4.413949
+      localHeight: 4.413949
+      lift: -0
+      score: 57
+    - id: arch
+      prefab: {fileID: 919132149155446097, guid: 5033cb3598a4e4f64afae2dd224975e3, type: 3}
+      radius: 1.505722
+      height: 4.413949
+      localHeight: 4.413949
+      lift: -0
+      score: 57
+    - id: tree_pine_orange_medium
+      prefab: {fileID: 919132149155446097, guid: 64baec628280045548c890c0e8a4aaf9, type: 3}
+      radius: 1.6283035
+      height: 5.8718686
+      localHeight: 5.391661
+      lift: 0.48020744
+      score: 66
+    - id: tree_pine_yellow_medium
+      prefab: {fileID: 919132149155446097, guid: e59161d76b4a64076badea3d3c830620, type: 3}
+      radius: 1.6283035
+      height: 5.8718686
+      localHeight: 5.391661
+      lift: 0.48020744
+      score: 66
+    - id: tree_pine_orange_large
+      prefab: {fileID: 919132149155446097, guid: 8c76ec75aea0949839e744ad7aa32054, type: 3}
+      radius: 2.2738686
+      height: 7.475125
+      localHeight: 6.9203653
+      lift: 0.5547595
+      score: 129
+    - id: tree_pine_yellow_large
+      prefab: {fileID: 919132149155446097, guid: 3ff330e0d3f53429fa0f117929925859, type: 3}
+      radius: 2.2738686
+      height: 7.475125
+      localHeight: 6.9203653
+      lift: 0.5547595
+      score: 129
+    - id: crypt
+      prefab: {fileID: 919132149155446097, guid: 0b8e35aff0b93416cb8862ff352d1cf4, type: 3}
+      radius: 3.6499999
+      height: 8
+      localHeight: 8
+      lift: -0
+      score: 333
+    colorA: {r: 0.2, g: 0.17, b: 0.24, a: 1}
+    colorB: {r: 0.36, g: 0.31, b: 0.36, a: 1}
+    colorC: {r: 0.95, g: 0.45, b: 0.1, a: 1}
+    lightColor: {r: 0.57, g: 0.66499996, b: 0.95, a: 0.95}
+    lightDir: {x: 0.3, y: 0.8, z: -0.5}
+    ambientSky: {r: 0.24000001, g: 0.24000001, b: 0.48000002, a: 0.6}
+    ambientGround: {r: 0.121, g: 0.066, b: 0.154, a: 0.55}
+    rim: {r: 0.4, g: 1, b: 0.7, a: 1}
+    fog: {r: 0.07, g: 0.06, b: 0.16, a: 1}
+    border: {r: 1, g: 0.5, b: 0.1, a: 1}
+    holeAccent: {r: 0.3, g: 1, b: 0.55, a: 1}
+    holeHot: {r: 1, g: 0.5, b: 0.1, a: 1}
+    space: {r: 0.01, g: 0.02, b: 0.04, a: 1}
+    nebulaA: {r: 0.05, g: 0.28, b: 0.3, a: 1}
+    nebulaB: {r: 0.55, g: 0.18, b: 0.6, a: 1}
+  - name: Dungeon
+    atlas: {fileID: 2800000, guid: 2a7299387a1da4e07a15973a2d81046a, type: 3}
+    groundStyle: 2
+    items:
+    - id: candle_thin_lit
+      prefab: {fileID: 919132149155446097, guid: 5398d431355f4471aaae2235eafe6250, type: 3}
+      radius: 0.09608087
+      height: 1.0510811
+      localHeight: 1.0510811
+      lift: -0
+      score: 1
+    - id: candle_thin
+      prefab: {fileID: 919132149155446097, guid: 23977de8c0ea34a76b38223a5b0b3f3c, type: 3}
+      radius: 0.09608087
+      height: 0.872982
+      localHeight: 0.872982
+      lift: -0
+      score: 1
+    - id: candle_melted
+      prefab: {fileID: 919132149155446097, guid: 19ea311757e1d4f06afdbbb5fd280488, type: 3}
+      radius: 0.16629659
+      height: 0.70153946
+      localHeight: 0.70153946
+      lift: -0
+      score: 1
+    - id: candle_lit
+      prefab: {fileID: 919132149155446097, guid: df4ca89c4e949454199ff2efb084c405, type: 3}
+      radius: 0.16629659
+      height: 1.0510811
+      localHeight: 1.0510811
+      lift: -0
+      score: 1
+    - id: candle
+      prefab: {fileID: 919132149155446097, guid: 9adb566f8f65e48918c8e1b3d380ee62, type: 3}
+      radius: 0.16629659
+      height: 0.872982
+      localHeight: 0.872982
+      lift: -0
+      score: 1
+    - id: coin
+      prefab: {fileID: 919132149155446097, guid: 816a6366fc18e44369bca503c77e4e32, type: 3}
+      radius: 0.18000582
+      height: 0.12500599
+      localHeight: 0.06250228
+      lift: 0.06250371
+      score: 1
+    - id: bottle_A_labeled_green
+      prefab: {fileID: 919132149155446097, guid: 739968e0a2a144d93b15233fa0a6d910, type: 3}
+      radius: 0.18420504
+      height: 0.8857132
+      localHeight: 0.8857146
+      lift: -0.0000013709068
+      score: 1
+    - id: bottle_A_brown
+      prefab: {fileID: 919132149155446097, guid: b825b61aa95934d5bac3d8f7de2c75ca, type: 3}
+      radius: 0.18420504
+      height: 0.8857132
+      localHeight: 0.8857146
+      lift: -0.0000013709068
+      score: 1
+    - id: bottle_A_green
+      prefab: {fileID: 919132149155446097, guid: 7054f49bb8fce46efa70614c42d2a041, type: 3}
+      radius: 0.18420504
+      height: 0.8857132
+      localHeight: 0.8857146
+      lift: -0.0000013709068
+      score: 1
+    - id: bottle_A_labeled_brown
+      prefab: {fileID: 919132149155446097, guid: 64e07a7b17593490f8c68e7d6df2085c, type: 3}
+      radius: 0.18420504
+      height: 0.8857132
+      localHeight: 0.8857146
+      lift: -0.0000013709068
+      score: 1
+    - id: candle_triple
+      prefab: {fileID: 919132149155446097, guid: 1e74b2829743547eca184b720c26f776, type: 3}
+      radius: 0.2311198
+      height: 0.872982
+      localHeight: 0.872982
+      lift: -0
+      score: 1
+    - id: plate_small
+      prefab: {fileID: 919132149155446097, guid: 1b47180913eb146558b37168a31f22bd, type: 3}
+      radius: 0.24264413
+      height: 0.12940912
+      localHeight: 0.12940994
+      lift: -0.00000081956387
+      score: 1
+    - id: torch_lit
+      prefab: {fileID: 919132149155446097, guid: 804e89d17ca114684bd096fe0f6d78ef, type: 3}
+      radius: 0.27514166
+      height: 1.1257926
+      localHeight: 0.7307469
+      lift: 0.3950457
+      score: 2
+    - id: torch
+      prefab: {fileID: 919132149155446097, guid: 4bad4a31a8e2c4027a2ffb8ce4f01c12, type: 3}
+      radius: 0.27514166
+      height: 1.0416046
+      localHeight: 0.64655894
+      lift: 0.3950457
+      score: 2
+    - id: bottle_B_green
+      prefab: {fileID: 919132149155446097, guid: b6e507bee9e174986a07b944d5405177, type: 3}
+      radius: 0.27637735
+      height: 0.8857133
+      localHeight: 0.8857146
+      lift: -0.0000013113022
+      score: 2
+    - id: bottle_B_brown
+      prefab: {fileID: 919132149155446097, guid: 7df423d826b464d92b35cc0117db2fb4, type: 3}
+      radius: 0.27637735
+      height: 0.8857133
+      localHeight: 0.8857146
+      lift: -0.0000013113022
+      score: 2
+    - id: keyring_hanging
+      prefab: {fileID: 919132149155446097, guid: ff1234b916fe34a5cb97475b92b499bc, type: 3}
+      radius: 0.28800195
+      height: 1.219533
+      localHeight: 0.02319634
+      lift: 1.1963366
+      score: 2
+    - id: torch_mounted
+      prefab: {fileID: 919132149155446097, guid: cd7ff9c6bc3164907b852a9221618016, type: 3}
+      radius: 0.29644772
+      height: 1.0624667
+      localHeight: 0.6816597
+      lift: 0.38080704
+      score: 2
+    - id: key
+      prefab: {fileID: 919132149155446097, guid: e8f43ff98edd04b9588d14b5ce886804, type: 3}
+      radius: 0.31590486
+      height: 0.40287903
+      localHeight: 0.20143878
+      lift: 0.20144024
+      score: 2
+    - id: trunk_small_A
+      prefab: {fileID: 919132149155446097, guid: 28505f693f26a44c3a99c3d1cc04269f, type: 3}
+      radius: 0.32158086
+      height: 0.48431265
+      localHeight: 0.4843125
+      lift: 0.00000014901161
+      score: 3
+    - id: trunk_small_C
+      prefab: {fileID: 919132149155446097, guid: 153fa898845a54b349997781ba75d8c6, type: 3}
+      radius: 0.32158086
+      height: 0.48431265
+      localHeight: 0.4843125
+      lift: 0.00000014901161
+      score: 3
+    - id: trunk_small_B
+      prefab: {fileID: 919132149155446097, guid: 5e0c6ae7091194ca79c520caa60a3a9f, type: 3}
+      radius: 0.32158086
+      height: 0.48431265
+      localHeight: 0.4843125
+      lift: 0.00000014901161
+      score: 3
+    - id: bottle_C_brown
+      prefab: {fileID: 919132149155446097, guid: 97618d114b2684fb38da62cd28166bd6, type: 3}
+      radius: 0.36850312
+      height: 0.9061972
+      localHeight: 0.9061985
+      lift: -0.0000013113022
+      score: 3
+    - id: bottle_C_green
+      prefab: {fileID: 919132149155446097, guid: 9133e27851e2f44f8a9b44e8dec81241, type: 3}
+      radius: 0.36850312
+      height: 0.9061972
+      localHeight: 0.9061985
+      lift: -0.0000013113022
+      score: 3
+    - id: stool
+      prefab: {fileID: 919132149155446097, guid: 14886923dec4644c5ba008a829203850, type: 3}
+      radius: 0.37500373
+      height: 0.50000006
+      localHeight: 0.50000006
+      lift: -0
+      score: 4
+    - id: chair
+      prefab: {fileID: 919132149155446097, guid: a81816c21e2dc41bba244472b9a26296, type: 3}
+      radius: 0.3750044
+      height: 1.2265056
+      localHeight: 1.2265056
+      lift: -0
+      score: 4
+    - id: shelf_small_candles
+      prefab: {fileID: 919132149155446097, guid: a501bf713a27a4ec2a0f3fee150453e9, type: 3}
+      radius: 0.4125
+      height: 0.9941987
+      localHeight: 0.69419867
+      lift: 0.3
+      score: 4
+    - id: shelf_small
+      prefab: {fileID: 919132149155446097, guid: c0e93fdfbcd05405cb1b53e343d12c13, type: 3}
+      radius: 0.4125
+      height: 0.39999998
+      localHeight: 0.09999997
+      lift: 0.3
+      score: 4
+    - id: trunk_medium_C
+      prefab: {fileID: 919132149155446097, guid: 20ccb65d192584c53ad0d6583bfbbd76, type: 3}
+      radius: 0.46287128
+      height: 0.726469
+      localHeight: 0.72646874
+      lift: 0.00000023841858
+      score: 5
+    - id: trunk_medium_B
+      prefab: {fileID: 919132149155446097, guid: 58ca8b5017e804fd4a1ced50b6795963, type: 3}
+      radius: 0.46287128
+      height: 0.726469
+      localHeight: 0.72646874
+      lift: 0.00000023841858
+      score: 5
+    - id: trunk_medium_A
+      prefab: {fileID: 919132149155446097, guid: 8df8f6b9a6eeb406ba5a89f902617b1a, type: 3}
+      radius: 0.46287128
+      height: 0.726469
+      localHeight: 0.72646874
+      lift: 0.00000023841858
+      score: 5
+    - id: coin_stack_small
+      prefab: {fileID: 919132149155446097, guid: a9aaa78a9c56749e89e2651a3eb259df, type: 3}
+      radius: 0.4685718
+      height: 0.47823358
+      localHeight: 0.47823298
+      lift: 0.00000059604645
+      score: 5
+    - id: plate_food_B
+      prefab: {fileID: 919132149155446097, guid: bbbd3ea1fb36543b59e027508adb2b7e, type: 3}
+      radius: 0.48528826
+      height: 0.23610514
+      localHeight: 0.23610593
+      lift: -0.00000078976154
+      score: 6
+    - id: plate
+      prefab: {fileID: 919132149155446097, guid: 00163114a85d341a6a48a9bc2bb53e83, type: 3}
+      radius: 0.48528826
+      height: 0.12940918
+      localHeight: 0.12940997
+      lift: -0.00000078976154
+      score: 6
+    - id: table_small
+      prefab: {fileID: 919132149155446097, guid: 798f6298337014d0492755f54da27a19, type: 3}
+      radius: 0.5
+      height: 1.0000002
+      localHeight: 1.0000001
+      lift: 0.00000011920929
+      score: 6
+    - id: box_small
+      prefab: {fileID: 919132149155446097, guid: 6328bcdd6f8ab45a5939a1c78cdfa21c, type: 3}
+      radius: 0.50000006
+      height: 1.0000001
+      localHeight: 1.0000001
+      lift: -0
+      score: 6
+    - id: plate_stack
+      prefab: {fileID: 919132149155446097, guid: 079c2fa198cae4d51b87ab2b9bcfcf0a, type: 3}
+      radius: 0.5001245
+      height: 0.5638733
+      localHeight: 0.56387407
+      lift: -0.0000007748604
+      score: 6
+    - id: barrel_small
+      prefab: {fileID: 919132149155446097, guid: 9fc62288b7c804b84b687ca119259dc1, type: 3}
+      radius: 0.50068206
+      height: 1.0176637
+      localHeight: 1.0176637
+      lift: -0
+      score: 6
+    - id: plate_food_A
+      prefab: {fileID: 919132149155446097, guid: cf7e6cd0f8ca641348633f94d19a86f2, type: 3}
+      radius: 0.50297385
+      height: 0.78754616
+      localHeight: 0.78754693
+      lift: -0.0000007748604
+      score: 6
+    - id: table_small_decorated_B
+      prefab: {fileID: 919132149155446097, guid: 21da85d24b18b4858b11e00627a8dc33, type: 3}
+      radius: 0.5040687
+      height: 2.1568885
+      localHeight: 2.1568885
+      lift: -0
+      score: 6
+    - id: coin_stack_medium
+      prefab: {fileID: 919132149155446097, guid: dd05ab99a4b9c4eeba505cb6873e18f7, type: 3}
+      radius: 0.5099255
+      height: 0.6406729
+      localHeight: 0.6406723
+      lift: 0.00000059604645
+      score: 7
+    - id: sword_shield_broken
+      prefab: {fileID: 919132149155446097, guid: 87746ca4e31144ee1be79e3e38ddc81e, type: 3}
+      radius: 0.5220884
+      height: 1.962297
+      localHeight: 1.1692989
+      lift: 0.7929981
+      score: 7
+    - id: keyring
+      prefab: {fileID: 919132149155446097, guid: b23bac75cc15c4b58899b9f226889bb9, type: 3}
+      radius: 0.5734639
+      height: 0.2613786
+      localHeight: 0.24150392
+      lift: 0.019874662
+      score: 8
+    - id: table_small_decorated_A
+      prefab: {fileID: 919132149155446097, guid: 1c4adf0d7c8b14fe6a92140c01944bab, type: 3}
+      radius: 0.57548064
+      height: 1.6212999
+      localHeight: 1.6212997
+      lift: 0.00000011920929
+      score: 8
+    - id: trunk_large_C
+      prefab: {fileID: 919132149155446097, guid: 864a498d4caf445c98f6c4fda4aca721, type: 3}
+      radius: 0.715
+      height: 1.0000001
+      localHeight: 0.9999998
+      lift: 0.00000029802322
+      score: 13
+    - id: trunk_large_B
+      prefab: {fileID: 919132149155446097, guid: f786e81586c4c42e89308c374e3b6752, type: 3}
+      radius: 0.715
+      height: 1.0000001
+      localHeight: 0.9999998
+      lift: 0.00000029802322
+      score: 13
+    - id: trunk_large_A
+      prefab: {fileID: 919132149155446097, guid: 2ebd38d72f651401b88b713ef2271e57, type: 3}
+      radius: 0.715
+      height: 1.0000001
+      localHeight: 0.9999998
+      lift: 0.00000029802322
+      score: 13
+    - id: shelf_large
+      prefab: {fileID: 919132149155446097, guid: 274babfc948e442ad9c58a3dbd68e5ce, type: 3}
+      radius: 0.73749995
+      height: 0.44999987
+      localHeight: 0.09999949
+      lift: 0.35000038
+      score: 14
+    - id: barrier_half
+      prefab: {fileID: 919132149155446097, guid: 7e73a62102b404fc0a717989dfaf3088, type: 3}
+      radius: 0.7375
+      height: 1.1
+      localHeight: 1.1
+      lift: -0
+      score: 14
+    - id: shelves
+      prefab: {fileID: 919132149155446097, guid: 6ead96fd3b15a490ab670fc79836d7f3, type: 3}
+      radius: 0.7375
+      height: 1.9499998
+      localHeight: 2.6999998
+      lift: -0.75
+      score: 14
+    - id: box_small_decorated
+      prefab: {fileID: 919132149155446097, guid: f638d40c43b8f4c0abaf16cff9181a47, type: 3}
+      radius: 0.74447525
+      height: 1.4828322
+      localHeight: 1.4828315
+      lift: 0.00000071525574
+      score: 14
+    - id: box_large
+      prefab: {fileID: 919132149155446097, guid: 4c19587a098a9440383e57f1a8a5dab7, type: 3}
+      radius: 0.7500001
+      height: 1.5000001
+      localHeight: 1.5000001
+      lift: -0
+      score: 14
+    - id: pillar
+      prefab: {fileID: 919132149155446097, guid: b811eceda7010454fa5d5570cc996dac, type: 3}
+      radius: 0.7500002
+      height: 4
+      localHeight: 4
+      lift: 0.00000011920929
+      score: 14
+    - id: barrel_small_stack
+      prefab: {fileID: 919132149155446097, guid: 4e115dcdc17c54c7a82e4cf3c9f0715c, type: 3}
+      radius: 0.7762956
+      height: 1.7701381
+      localHeight: 1.770139
+      lift: -0.000000834465
+      score: 15
+    - id: sword_shield_gold
+      prefab: {fileID: 919132149155446097, guid: cae939df74775472c9162230a591e5f7, type: 3}
+      radius: 0.7841557
+      height: 1.6674466
+      localHeight: 0.85243523
+      lift: 0.8150114
+      score: 15
+    - id: sword_shield
+      prefab: {fileID: 919132149155446097, guid: fbf681a1709bb49459421be38784ba4d, type: 3}
+      radius: 0.7841557
+      height: 1.6674466
+      localHeight: 0.85243523
+      lift: 0.8150114
+      score: 15
+    - id: coin_stack_large
+      prefab: {fileID: 919132149155446097, guid: 6bfaf68019cb649e5a9998e2287cc632, type: 3}
+      radius: 0.7904591
+      height: 1.1568887
+      localHeight: 1.1568886
+      lift: 0.00000011920929
+      score: 16
+    - id: chest_gold
+      prefab: {fileID: 919132149155446097, guid: 7e0caafbe7ec54df38c10784a9b7707e, type: 3}
+      radius: 0.80551565
+      height: 1.3000005
+      localHeight: 1.0406723
+      lift: 0.00000035762787
+      score: 16
+    - id: chest
+      prefab: {fileID: 919132149155446097, guid: 5b0e8af46776b42f2bbf32d5351c01f8, type: 3}
+      radius: 0.80551565
+      height: 1.3000005
+      localHeight: 0.80000025
+      lift: 0.00000035762787
+      score: 16
+    - id: wall_half
+      prefab: {fileID: 919132149155446097, guid: 6962a7e418c8541d08f44d0d290c6cae, type: 3}
+      radius: 0.82500035
+      height: 4
+      localHeight: 4
+      lift: -0
+      score: 17
+    - id: barrier_colum_half
+      prefab: {fileID: 919132149155446097, guid: 6ff864bd14c4e4772a0aefe03024250c, type: 3}
+      radius: 0.88624996
+      height: 1.4000001
+      localHeight: 1.4000001
+      lift: -0
+      score: 20
+    - id: barrel_large
+      prefab: {fileID: 919132149155446097, guid: 2e67e9a33052c4963bbef0d3eb688a53, type: 3}
+      radius: 0.9
+      height: 2
+      localHeight: 2.000001
+      lift: -0.0000009536743
+      score: 20
+    - id: barrel_large_decorated
+      prefab: {fileID: 919132149155446097, guid: b972852e866014dda9628a3c2cafe041, type: 3}
+      radius: 0.9545388
+      height: 2.5564532
+      localHeight: 2.5544624
+      lift: 0.0019907951
+      score: 23
+    - id: keg
+      prefab: {fileID: 919132149155446097, guid: 7a3438c9c8db24594a3e4a96d344e2c7, type: 3}
+      radius: 0.96500003
+      height: 2.0507243
+      localHeight: 2.0507245
+      lift: -0.00000023841858
+      score: 23
+    - id: table_medium
+      prefab: {fileID: 919132149155446097, guid: 4370362f3da5a411990ab79d62dfd06d, type: 3}
+      radius: 1.0000002
+      height: 1.0000002
+      localHeight: 1.0000001
+      lift: 0.00000011920929
+      score: 25
+    - id: table_medium_decorated_A
+      prefab: {fileID: 919132149155446097, guid: 2bc16dd620afa4332a28d481d6079ade, type: 3}
+      radius: 1.0000002
+      height: 1.8857145
+      localHeight: 1.8857144
+      lift: 0.00000011920929
+      score: 25
+    - id: table_medium_tablecloth
+      prefab: {fileID: 919132149155446097, guid: cef544eb62b604a9d8f2e8ade8b0b545, type: 3}
+      radius: 1.0000002
+      height: 1.0000002
+      localHeight: 1.0000001
+      lift: 0.00000011920929
+      score: 25
+    - id: table_medium_tablecloth_decorated_B
+      prefab: {fileID: 919132149155446097, guid: f8be072b5e95f4fd4be3f9dd10d08cc5, type: 3}
+      radius: 1.0000002
+      height: 1.8857145
+      localHeight: 1.8857144
+      lift: 0.00000011920929
+      score: 25
+    - id: pillar_decorated
+      prefab: {fileID: 919132149155446097, guid: e0a486d9aa5124d39aa07a440f4f32d7, type: 3}
+      radius: 1.0246794
+      height: 4
+      localHeight: 4
+      lift: 0.00000011920929
+      score: 26
+    - id: crates_stacked
+      prefab: {fileID: 919132149155446097, guid: 099a3b02b00824014a5b57db0338cb96, type: 3}
+      radius: 1.0966625
+      height: 2.142296
+      localHeight: 2.1422918
+      lift: 0.0000042915344
+      score: 30
+    - id: table_medium_broken
+      prefab: {fileID: 919132149155446097, guid: cd4198669e97245799fd81156e3e4e53, type: 3}
+      radius: 1.1876528
+      height: 0.9717632
+      localHeight: 0.96993715
+      lift: 0.0018260479
+      score: 35
+    - id: barrier_corner
+      prefab: {fileID: 919132149155446097, guid: 33741986bba834f8c99220041c504b9d, type: 3}
+      radius: 1.1974874
+      height: 1.4000002
+      localHeight: 1.4000001
+      lift: 0.00000011920929
+      score: 36
+    - id: bed_floor
+      prefab: {fileID: 919132149155446097, guid: 2ec67e086d8974c1e8ca370e01c80a49, type: 3}
+      radius: 1.2375
+      height: 0.5626322
+      localHeight: 0.56263196
+      lift: 0.00000023841858
+      score: 38
+    - id: bed_frame
+      prefab: {fileID: 919132149155446097, guid: 2f7c1e3f8cd364628bbe534028b67b8a, type: 3}
+      radius: 1.2375
+      height: 1.0626321
+      localHeight: 1.062632
+      lift: 0.00000011920929
+      score: 38
+    - id: barrier
+      prefab: {fileID: 919132149155446097, guid: 2fff3e2183a9d4eb88bab55b63b56fc9, type: 3}
+      radius: 1.3874999
+      height: 1.1
+      localHeight: 1.1
+      lift: -0
+      score: 48
+    - id: barrier_column
+      prefab: {fileID: 919132149155446097, guid: 1516d314a7f9b413e9d6ee335b3b9147, type: 3}
+      radius: 1.4225
+      height: 1.4000001
+      localHeight: 1.4000001
+      lift: -0
+      score: 51
+    - id: bed_decorated
+      prefab: {fileID: 919132149155446097, guid: 527b4edd9caed446a89548235df3b208, type: 3}
+      radius: 1.4497118
+      height: 1.7007954
+      localHeight: 1.7007952
+      lift: 0.00000023841858
+      score: 53
+    - id: wall_broken
+      prefab: {fileID: 919132149155446097, guid: 3e2f879e1d203484c87a0434c45ce8b9, type: 3}
+      radius: 1.475
+      height: 4
+      localHeight: 4
+      lift: -0
+      score: 54
+    - id: wall
+      prefab: {fileID: 919132149155446097, guid: dde6bafe2afd048a4a369fe2f989ded0, type: 3}
+      radius: 1.475
+      height: 4
+      localHeight: 4
+      lift: -0
+      score: 54
+    - id: wall_arched
+      prefab: {fileID: 919132149155446097, guid: ba968c19f36564cfb95849d858540b3f, type: 3}
+      radius: 1.4750001
+      height: 4
+      localHeight: 4
+      lift: -0
+      score: 54
+    - id: keg_decorated
+      prefab: {fileID: 919132149155446097, guid: 5b440eab6eb864538bf6c6eaaea9109e, type: 3}
+      radius: 1.4938024
+      height: 2.0507245
+      localHeight: 2.0507245
+      lift: -0
+      score: 56
+    - id: wall_pillar
+      prefab: {fileID: 919132149155446097, guid: 5a9e6759c8370420998d3cdeaadd2369, type: 3}
+      radius: 1.5625
+      height: 4
+      localHeight: 4
+      lift: 0.00000011920929
+      score: 61
+    - id: table_long
+      prefab: {fileID: 919132149155446097, guid: 8cbaf4a97165f495dab9da215a3702bf, type: 3}
+      radius: 1.6500002
+      height: 1.0000006
+      localHeight: 1.0000004
+      lift: 0.00000023841858
+      score: 68
+    - id: table_long_tablecloth
+      prefab: {fileID: 919132149155446097, guid: 14ddcee401d4f407788df5df000c9765, type: 3}
+      radius: 1.6500002
+      height: 1.0000006
+      localHeight: 1.0000004
+      lift: 0.00000023841858
+      score: 68
+    - id: table_long_decorated_C
+      prefab: {fileID: 919132149155446097, guid: 930236d4d6379453eaa7576edc543beb, type: 3}
+      radius: 1.6581478
+      height: 2.7675679
+      localHeight: 2.7675676
+      lift: 0.00000023841858
+      score: 69
+    - id: table_long_tablecloth_decorated_A
+      prefab: {fileID: 919132149155446097, guid: b6d7ccfd4fdc84ff0bebf423ab7b6127, type: 3}
+      radius: 1.6602626
+      height: 1.8857147
+      localHeight: 1.8857144
+      lift: 0.00000023841858
+      score: 69
+    - id: table_long_decorated_A
+      prefab: {fileID: 919132149155446097, guid: b9730115249d543fe863b99ae626a28d, type: 3}
+      radius: 1.6602626
+      height: 1.8857147
+      localHeight: 1.8857144
+      lift: 0.00000023841858
+      score: 69
+    - id: box_stacked
+      prefab: {fileID: 919132149155446097, guid: 351264b6f3cff412fb477037242ec62d, type: 3}
+      radius: 1.789466
+      height: 3.3089056
+      localHeight: 3.3089051
+      lift: 0.00000047683716
+      score: 80
+    - id: rubble_half
+      prefab: {fileID: 919132149155446097, guid: 8bff663fb7a2f4673a6669b0c6031ea1, type: 3}
+      radius: 1.8248874
+      height: 3.5000002
+      localHeight: 3.5
+      lift: 0.00000023841858
+      score: 83
+    - id: table_long_broken
+      prefab: {fileID: 919132149155446097, guid: 4134927b7acd94a0aa4b72aa5f86a2f6, type: 3}
+      radius: 1.8530766
+      height: 1.2662684
+      localHeight: 1.2662681
+      lift: 0.00000023841858
+      score: 86
+    - id: rubble_large
+      prefab: {fileID: 919132149155446097, guid: e83c3ebf6aa0b41c5adae56f5b99a6f9, type: 3}
+      radius: 3.1990583
+      height: 3.4960883
+      localHeight: 3.496088
+      lift: 0.00000023841858
+      score: 256
+    colorA: {r: 0.2, g: 0.18, b: 0.2, a: 1}
+    colorB: {r: 0.34, g: 0.3, b: 0.31, a: 1}
+    colorC: {r: 0.95, g: 0.6, b: 0.25, a: 1}
+    lightColor: {r: 1, g: 0.72, b: 0.42, a: 1}
+    lightDir: {x: 0.25, y: 0.85, z: 0.4}
+    ambientSky: {r: 0.275, g: 0.22000001, b: 0.275, a: 0.55}
+    ambientGround: {r: 0.154, g: 0.09900001, b: 0.11000001, a: 0.55}
+    rim: {r: 1, g: 0.7, b: 0.4, a: 1}
+    fog: {r: 0.1, g: 0.06, b: 0.1, a: 1}
+    border: {r: 0.3, g: 0.8, b: 1, a: 1}
+    holeAccent: {r: 0.35, g: 0.6, b: 1, a: 1}
+    holeHot: {r: 1, g: 0.8, b: 0.3, a: 1}
+    space: {r: 0.03, g: 0.01, b: 0.02, a: 1}
+    nebulaA: {r: 0.45, g: 0.12, b: 0.08, a: 1}
+    nebulaB: {r: 0.9, g: 0.55, b: 0.15, a: 1}
